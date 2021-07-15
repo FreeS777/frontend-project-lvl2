@@ -1,6 +1,6 @@
 install: install-deps
 
-get-diff:
+gendiff:
 	node bin/gendiff.js
 
 install-deps:
