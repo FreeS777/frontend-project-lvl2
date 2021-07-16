@@ -9,5 +9,10 @@ program
   .option('-f, --format [type] ', 'Output format')
   .arguments('<filepath1> <filepath2>')
   .action((firstFilePath, secondFilePath) => (
-    console.log(genDiff(path.resolve(process.cwd(), firstFilePath), path.resolve(process.cwd(), secondFilePath)))))
+    console.log(
+      genDiff(
+        path.resolve(process.cwd(), firstFilePath),
+        path.resolve(process.cwd(), secondFilePath),
+      ),
+    )))
   .parse(process.agrv);
